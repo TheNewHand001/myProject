@@ -1,0 +1,232 @@
+.wrapper_new{
+    height:100%;
+    margin:0;    
+}
+/* 顶部 */
+#top{
+    height: 10%;
+    min-height: 60px;
+    min-width: 1250px;
+    /* background-color: yellow; */
+}
+.left-top{
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 100;
+    height: 60px;
+    padding-left: 24px;
+}
+.right-top{
+    height: 60px;
+    width:162px;
+    float: right;
+    /* background-color: red; */
+}
+/* 身体 */
+#body{
+    height: 80%;
+    min-height: 462px;
+    width: 658px;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: pink; */
+}
+#body img{
+    height: 129px;
+    width: 270px;
+    margin-top: -15px;
+    margin-bottom: 11px;
+}
+#search{
+    height: 44px;
+    background-color: aliceblue;
+    /* border-color: blue; */
+}
+/* 搜索input框 */
+#search-input{
+    height: 44px;
+    width: 550px;
+    /* background-color: plum; */
+    float:left;
+    border-color:  #fff;
+    
+}
+#search-input input{
+    height: 16px;
+    width: 443px;
+    padding: 12px 87px 12px 16px;
+    border-radius: 10px 0 0 10px;
+    border-right-color: #4e6ef2;
+    font-size:16px;
+    
+}
+#search-input input:hover{
+    border-color: #a7aab5;
+    outline:none;
+    border-right-color: #4e6ef2;
+}
+#search-input input:focus{
+    border-color: #4e6ef2;
+    outline: none;
+}
+/* 搜索input按钮 */
+#search-btn{
+    height:44px;
+    width:108px;
+    /* background-color: brown; */
+    float: right;
+}
+#search-btn input{
+    height: 44px;
+    width: 108px;
+    background-color: #4e6ef2;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+    font-size: 17px;
+    color:#fff
+}
+#search-btn input:hover{
+    background-color: #4662d9;
+}
+.mnav{
+            margin-right: 24px;
+            margin-top: 19px;
+            display: inline-block;
+            position: relative;
+            color: #222;
+            font: 13px/23px Arial,sans-serif;
+}
+        .div{
+            display: block;
+        }
+       
+        #kw{
+            width:443px;
+            padding-right: 87px;
+        }
+        
+        .baidu{
+            height: 100%;
+            width: 654px;
+            margin: 0 auto;
+            text-align: left;
+            padding-bottom: 100px;
+            list-style: none;
+            font-size:12px;
+            font-family: Arial,sans-serif;
+            /* padding-left: 596px; */
+
+        }
+
+        .h{
+            display: inline-block;
+            margin-right: 14px;
+            color:#bbb;
+        }
+        .icon{
+            margin-left:3px;
+            margin-right: 9px;
+            position: relative;
+            display: inline-block;
+            width: 20px;
+        }
+ 
+#bottom{
+    height: 10%;
+    min-height:60px;
+    min-width: 1250px;
+    /* background-color: plum; */
+}
+#foot-div{
+    width:100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 39px;
+    margin: 0;
+    padding-top: 1px;
+    line-height: 39px;
+    font-size:12px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.lh{
+    display: inline;
+    margin-right: 20px;
+}
+.text-color{
+    font-size: 12px;
+    text-decoration: none;
+    color: #bbb;
+}
+#foot-div a:hover{
+    color: #222;
+}
+/* 新闻热搜 */
+#hot{
+    height: 24px;
+    width: 645px;
+    margin-top: 45px;
+    /* background-color: pink; */
+}
+#hot-left{
+    height: 24px;
+    width: 172px;
+    /* background-color: blue; */
+    float: left;
+    text-align: left;
+}
+#hot-left a{
+    text-decoration: none;
+    font-size: 15.5px;
+    font-family: cIconfont;
+    font-size: normal;
+    color: #222;
+    font-weight: bold;
+} 
+#hot-right{
+    height: 16px;
+    width: 160px;
+    /* background-color: plum; */
+    float: right;
+    text-align: right;
+}
+#hot-right a{
+    color: #626675;
+    font: 14px/14px Arial,sans-serif;
+
+
+}
+#hot-ul{
+    list-style: none;
+    text-align: left;
+    margin-top: 6px;
+}
+#hot-ul li{
+    float: left;
+    height: 36px;
+    width: 306px;
+}
+.left-li{
+    margin-right: 20px;
+}
+.right-li{
+    margin-left: 20px;
+}
+.font{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(34,34,34);
+    margin-left: 15px;
+}
+.font:hover{
+    color: #4E6EF2;
+    text-decoration: underline;
+}
+.nu{
+    font-family: cIconfont;
+    font-size: 17px;
+    color: #9195a3;
+}
