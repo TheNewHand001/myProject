@@ -12,19 +12,33 @@
     <div class="wrapper_new">
         
         <div id="top">
-            <div class="left-top">
-                <div class="mnav">新闻</div>
-                <div class="mnav">hao123</div>
-                <div class="mnav">地图</div>
-                <div class="mnav">贴吧</div>
-                <div class="mnav">视频</div>
-                <div class="mnav">图片</div>
-                <div class="mnav">网盘</div>
-                <div class="mnav">更多</div>
-    
+            <div id="left-top" class="left-top">
+                <a href="http://news.baidu.com" target="_blank" >新闻</a>
+                <a href="https://www.hao123.com?src=from_pc" target="_blank" >hao123</a>
+                <a href="http://map.baidu.com" target="_blank" >地图</a>
+                <a href="http://tieba.baidu.com/" target="_blank" >贴吧</a>
+                <a href="https://haokan.baidu.com/?sfrom=baidu-top" target="_blank" >视频</a>
+                <a href="http://image.baidu.com/" target="_blank" >图片</a>
+                <a href="https://pan.baidu.com?from=1026962h" target="_blank" >网盘</a>
+                <div id="left-top-more">
+                    <a href="http://www.baidu.com/more/" name="tj_briicon"  target="_blank">更多</a>
+                    <div id="hidden-div">
+                        <img src="../assets/more.png" alt="">
+                    </div>
+	            </div>
             </div>
     
-            <div class="right-top"></div>
+            <div class="right-top">
+                <div>
+                    <span id="right-top-s">
+                        设置
+                    </span>
+                    <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F&sms=5" id="right-top-a">登录</a>
+                    <div id="set-hidden">
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
         </div >
         <div id="body" >
         <!-- <div id="body" class="baidu"> -->
@@ -35,6 +49,12 @@
                     <div id="search-input">
                         <input type="text">
                     </div>
+                    <span id="search-photo" @mouseover="isShow = true"
+                    @mouseout="isShow = false"
+                    >
+
+                    </span>
+                    <span class="soutu-hover-tip" style="display: none;" v-show="isShow">按图片搜索</span>
                     <div id="search-btn">
                         <input type="submit" value="百度一下">
                     </div>
@@ -45,7 +65,7 @@
                     <a href="">百度热搜&gt;</a>
                 </div>
                 <div id="hot-right">
-                    <a href="">&#10227; 换一换</a>
+                    <a href=""> <i class="iconfont icon-shuaxin"></i>换一换</a>
                 </div>
             </div>
             <ul id="hot-ul">
@@ -122,13 +142,14 @@
     
 </template>
 
-    <style>@import url(baidu.css);</style>
+    <style>@import url(baidu.less);</style>
 <script>
 export default{
     name:'App',
     data(){
         return{
-            searchQuery:''
+            searchQuery:'',
+            isShow:false
         }
     },
     methods:{
@@ -138,3 +159,4 @@ export default{
     }
 }
 </script>
+
